@@ -14,7 +14,10 @@ function generateTiles(){
       tiles.push([i,j])
     }
   }
-  for (let x of )
+  for (let i=0;i<tiles.length;i++){
+    let j = Math.floor(Math.random()*tiles.length);
+    [ tiles[i] , tiles[j] ] = [tiles [j] , tiles [ i]]
+  }
   return tiles ;
 } 
 
